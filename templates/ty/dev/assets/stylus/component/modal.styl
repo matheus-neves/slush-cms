@@ -1,0 +1,37 @@
+.modal
+	display none
+	position fixed
+	background rgba(0,0,0,.9)
+	z-index 99999
+	width 100%
+	height 100%
+	top 0
+	left 0
+
+	&__bl
+		align(center)
+		+above(641px)
+			align(center)
+
+		+above(1920px)
+			align(center)
+
+	&__close
+		position absolute
+		top -20px
+		right 5px
+		size(40px)
+		border-radius 50%
+		outline none
+		border none
+		background red
+		color #fff
+		+above(650px)
+			size(50px)
+			top -35px
+			right -20px
+
+	&__bl
+	#player
+		width 90vw
+		height 70vh
