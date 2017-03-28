@@ -1,10 +1,10 @@
 ## Getting Started
 
-Install 'slush' and 'slush-performance' globally:
+Install 'slush' and 'slush-cms' globally:
 
 ```bash
 $ npm install -g slush
-$ npm install -g slush-performance
+$ npm install -g slush-cms
 ```
 
 ### Usage
@@ -12,13 +12,13 @@ $ npm install -g slush-performance
 Create a new folder for your project:
 
 ```bash
-$ mkdir lorem-slush-performance
+$ mkdir lorem-slush-cms
 ```
 
 Run the generator from within the new folder:
 
 ```bash
-$ cd lorem-slush-performance && slush-performance
+$ cd lorem-slush-cms && slush-cms
 ```
 
 ## Getting To Know Slush
