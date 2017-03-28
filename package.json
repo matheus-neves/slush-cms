@@ -1,6 +1,6 @@
 {
   "name": "slush-cms",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "",
   "homepage": "https://github.com/matheus-neves/slush-cms",
   "main": "slushfile.js",
