@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+  <!--[if IEMobile 7]><html class="iem7" lang="pt-br" dir="ltr"><![endif]-->
+  <!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7" lang="pt-br" dir="ltr"><![endif]-->
+  <!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8" lang="pt-br" dir="ltr"><![endif]-->
+  <!--[if IE 8]><html class="lt-ie9" lang="pt-br" dir="ltr"><![endif]-->
+  <!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html lang="pt-br" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+  <head>
+  <meta charset="utf-8"/>
+  <link rel="shortlink" href="https://www.jnjbrasil.com.br/node/3716"/>
+  <link rel="canonical" href="https://www.jnjbrasil.com.br/desafio"/>
+  <link rel="shortcut icon" href="https://www.jnjbrasil.com.br/sites/default/files/favicon_0.ico" type="image/vnd.microsoft.icon"/>
+  <meta name="generator" content="Drupal 7 (http://drupal.org)"/>
+  <meta name="Roles" content="all"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+  <meta http-equiv="cleartype" content="on"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="MobileOptimized" content="width"/>
+  <meta name="HandheldFriendly" content="true"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <title><%= appName %></title>
+  <link href="https://plus.google.com/+jnj" rel="Publisher">
+  <link type="text/css" rel="stylesheet" href="https://www.jnjbrasil.com.br/sites/default/files/advagg_css/css__dFXsZOz8esOtWJSwU-SAvjhQuWQ4sxh6ufeROYV9Cls__agGZydNOyT5uYNJORDQs2OYH6GUmaCKmHRpvI452g8Q__MdkGEAbe7HcZ4YJ9yJUPZHs8U3luWZfMGDps-VZo1S0.css" media="all"/>
+  <link type="text/css" rel="stylesheet" href="https://www.jnjbrasil.com.br/sites/default/files/advagg_css/css__f-pc2_wdLzMb8QZtIgU0Z2SJrGSH3DP4JnEFiMmnfas__nPxRojdId-UjiZi4WwwjpNcmLmTzffFGbsrDpJfCVwE__MdkGEAbe7HcZ4YJ9yJUPZHs8U3luWZfMGDps-VZo1S0.css" media="all"/>
+  <link type="text/css" rel="stylesheet" href="https://www.jnjbrasil.com.br/sites/default/files/advagg_css/css__kTrYOAMAKQGhtheMHSwJ3PXxeKTWd6n_QniSoejzdZM__e4xL_E-JTbq3tqoWrm-n97mpahXozB_OJEP96dn0aj8__MdkGEAbe7HcZ4YJ9yJUPZHs8U3luWZfMGDps-VZo1S0.css" media="only screen"/>
+  <link type="text/css" rel="stylesheet" href="https://www.jnjbrasil.com.br/sites/default/files/advagg_css/css__6Io5jVyFIHrNCcyf0bjmKymiAsKxQQti2bzCbt-fong__mt2Mzwyp1VSkEmJjlBPVHt1rUGl9PjzgDD69FfvUF4s__MdkGEAbe7HcZ4YJ9yJUPZHs8U3luWZfMGDps-VZo1S0.css" media="only screen and (max-width:400px)"/>
+  <link type="text/css" rel="stylesheet" href="https://www.jnjbrasil.com.br/sites/default/files/advagg_css/css__KQ6CetnpQdWkuPSXpBt2QKRucSVUhbnoKILhQN5Zuvo__QTSFUm5pVkZF5SBPoktOf9H1u8zZf0RKqApz_v6k9jU__MdkGEAbe7HcZ4YJ9yJUPZHs8U3luWZfMGDps-VZo1S0.css" media="only screen and (max-width:640px)"/>
+  <link type="text/css" rel="stylesheet" href="https://www.jnjbrasil.com.br/sites/default/files/advagg_css/css__p0AdPp7nd2NA6eDAya4QdQboFE5XS_p8wFoRug2sFUg__DnNNFFfpq_sx6EJoNwouvStu6Tb0raSe6mXkbXI9RIY__MdkGEAbe7HcZ4YJ9yJUPZHs8U3luWZfMGDps-VZo1S0.css" media="only screen and (min-width:641px) and (max-width:1000px)"/>
+  <link type="text/css" rel="stylesheet" href="https://www.jnjbrasil.com.br/sites/default/files/advagg_css/css__t3ilAuTQ_uwRgpq6SxKCQIg8Be6zCQRIe9sgCV9FmmA__AFAO-zlHLUSl6HEBukSiH1c_pwseSWLurbVtc-nMTHI__MdkGEAbe7HcZ4YJ9yJUPZHs8U3luWZfMGDps-VZo1S0.css" media="only screen and (min-width:641px) and (max-width:1879px)"/>
+  <link type="text/css" rel="stylesheet" href="https://www.jnjbrasil.com.br/sites/default/files/advagg_css/css__ukATzlN1an8cDAQoge5ivesW-AdiENOfuh-mmw4_6XM__zF7Nu8k0PQW9i3kSPtXtlWEvRBsLsLdvICl1yhnnfUA__MdkGEAbe7HcZ4YJ9yJUPZHs8U3luWZfMGDps-VZo1S0.css" media="only screen and (min-width:1880px)"/>
+  <link type="text/css" rel="stylesheet" href="https://www.jnjbrasil.com.br/sites/default/files/advagg_css/css__DXtHFvYFWrZ8QWXJA7WTN3bvvp5fUHBjYOmID41DSro__QEeURVn6frzBeBqJtMiL9edb2U_TB8-xTkqiDnWuYFc__MdkGEAbe7HcZ4YJ9yJUPZHs8U3luWZfMGDps-VZo1S0.css" media="screen"/>
+  <link type="text/css" rel="stylesheet" href="https://www.jnjbrasil.com.br/sites/default/files/advagg_css/css__KX3ZFjeCHhtP4vbxEY-OB9my8KhnZBdqxXKNlHFb9KE__K3kqCo2OUjOUZO_kkeee6VgmTy-Iz0s3XvFL9DLVxLY__MdkGEAbe7HcZ4YJ9yJUPZHs8U3luWZfMGDps-VZo1S0.css" media="print"/>
+  <link type="text/css" rel="stylesheet" href="https://www.jnjbrasil.com.br/sites/default/files/advagg_css/css__KVVSkwJpq2FbiNxJ_GGAtzMv8FazpWN9UitfMIr9Eqk__guBfGQHa9yXXNGfswVkIMa-pKQSyCf5L92R2naCjrME__MdkGEAbe7HcZ4YJ9yJUPZHs8U3luWZfMGDps-VZo1S0.css" media="only screen"/>
+  <link type="text/css" rel="stylesheet" href="https://www.jnjbrasil.com.br/sites/default/files/advagg_css/css__NEC7Xx6ifpoi9wnqi6XgKuZ-0-Ll39F1UfXyOz6tP9Q__VfKUcFS--GRfBLckJ2ADEzyEcxyQnduvNWB3CITGOgA__MdkGEAbe7HcZ4YJ9yJUPZHs8U3luWZfMGDps-VZo1S0.css" media="all"/>
+  <!--[if (lt IE 9)&(!IEMobile 7)]>
+  <link type="text/css" rel="stylesheet" href="https://www.jnjbrasil.com.br/sites/default/files/advagg_css/css__aP-ga9li9eUHO1gY4p4xVua4XnCd5VU9aZ01hA8qsQw__lNqHrc6K8bmwpPFk9YZXgxTAA73jnYb9bIXN6cHsSqU__MdkGEAbe7HcZ4YJ9yJUPZHs8U3luWZfMGDps-VZo1S0.css" media="screen" />
+  <![endif]-->
+  <script src="https://www.jnjbrasil.com.br/sites/default/files/advagg_js/js__PQX4p0TaD6OvUsxdfgyBMhGebKV7qqXVQj9Kf585bnw__y-4RWk3djmIWaRKyBW3bHRYZkUSb_n0evd6pUErzb5w__MdkGEAbe7HcZ4YJ9yJUPZHs8U3luWZfMGDps-VZo1S0.js"></script>
+  <script>jQuery(function() { Authcache.init(); });</script>
+  <script src="https://www.jnjbrasil.com.br/sites/default/files/advagg_js/js__GFjMybosyBJlQPs5R3IfwJtbk8OMwohFoZ3ZoNKhgnM__pzBusZEvA067THG5lBuPFa4By4hCDQcmVz3jGS8rOnQ__MdkGEAbe7HcZ4YJ9yJUPZHs8U3luWZfMGDps-VZo1S0.js"></script>
+  <script src="//assets.adobedtm.com/bf12630c02a44df137a783f39cdb4dbd09e2b5d7/satelliteLib-a77040281e8ad94d1a2e4c30d4df757c9e6fed98.js"></script>
+  <script src="https://www.jnjbrasil.com.br/sites/default/files/advagg_js/js__1Q1NXgSN0VpiClR35MWJQg9aqKsFZLWF158OmVPP5w0__UvlOIho7GtleDykg--iqomWJu26fq5V2u1iuaDyfqUI__MdkGEAbe7HcZ4YJ9yJUPZHs8U3luWZfMGDps-VZo1S0.js"></script>
+  <script>var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-7954941-1"]);_gaq.push(['_setCustomVar', 1, "UserRole", "usu\u00e1rio an\u00f4nimo", 3]);if (typeof window.MQ !== 'undefined') {
+    switch(window.MQ.context){
+      case 'standard':
+        _gaq.initialBreakpoint = 'Full HD'
+      break;
+      case 'tablet_landscape':
+      case 'tablet_portrait':
+        _gaq.initialBreakpoint = 'Desktop'
+        break;
+      case 'smartphone_landscape':
+      case 'smartphone_portrait':
+        _gaq.initialBreakpoint = 'Mobile'
+        break;
+    }
+    _gaq.push(['_setCustomVar', 2, "Breakpoint", _gaq.initialBreakpoint, 3]);
+  }_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();</script>
+  <script>jQuery.extend(Drupal.settings, {
+      "basePath": "\/",
+      "pathPrefix": "",
+      "ajaxPageState": {
+          "theme": "jnjbrasil",
+          "theme_token": "gp3iuLTUShuBTcURkG8TEQ4NWAWQ9kNIktxXXnc5mBY",
+          "css": {
+              "misc\/ui\/jquery.ui.core.css": 1,
+              "misc\/ui\/jquery.ui.theme.css": 1,
+              "misc\/ui\/jquery.ui.button.css": 1,
+              "misc\/ui\/jquery.ui.resizable.css": 1,
+              "misc\/ui\/jquery.ui.dialog.css": 1,
+              "sites\/all\/modules\/date\/date_api\/date.css": 1,
+              "sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css": 1,
+              "sites\/all\/modules\/ckeditor\/css\/ckeditor.css": 1,
+              "sites\/all\/modules\/authcache\/authcache.css": 1,
+              "sites\/all\/modules\/ctools\/css\/ctools.css": 1,
+              "sites\/all\/themes\/jnj_tiles\/css\/jnj_tiles.base.css": 1,
+              "sites\/all\/modules\/extlink\/extlink.css": 1,
+              "sites\/all\/modules\/extlink\/modal.css": 1,
+              "sites\/all\/themes\/jnj_tiles\/css\/jnj_tiles.global.base.css": 1,
+              "sites\/all\/themes\/jnj_tiles\/css\/jnj_tiles.global.styles.css": 1,
+              "sites\/all\/themes\/jnj_tiles\/css\/jnj_tiles.responsive.smartphone.portrait.css": 1,
+              "sites\/all\/themes\/jnj_tiles\/css\/jnj_tiles.responsive.smartphone.landscape.css": 1,
+              "sites\/all\/themes\/jnj_tiles\/css\/jnj_tiles.responsive.tablet.portrait.css": 1,
+              "sites\/all\/themes\/jnj_tiles\/css\/jnj_tiles.responsive.tablet.landscape.css": 1,
+              "sites\/all\/themes\/jnj_tiles\/css\/jnj_tiles.responsive.desktop.css": 1,
+              "sites\/all\/themes\/adaptivetheme\/at_core\/css\/at.layout.css": 1,
+              "sites\/all\/themes\/jnj_tiles\/css\/flexslider.css": 1,
+              "sites\/all\/themes\/jnjbrasil\/css\/global.styles.css": 1,
+              "sites\/all\/themes\/jnjbrasil\/css\/icomoon.css": 1,
+              "sites\/all\/themes\/jnjbrasil\/css\/jquery.jscrollpane.css": 1,
+              "sites\/all\/themes\/jnj_tiles\/css\/print.css": 1,
+              "public:\/\/adaptivetheme\/jnjbrasil_files\/jnjbrasil.responsive.layout.css": 1,
+              "public:\/\/adaptivetheme\/jnjbrasil_files\/jnjbrasil.responsive.styles.css": 1,
+              "sites\/all\/modules\/jnj_tiles\/jnj_tiles_search_solr\/css\/jnj_tiles_search_solr.css": 1,
+              "sites\/all\/themes\/jnjbrasil\/css\/lt-ie9.css": 1
+          },
+          "js": {
+              "sites\/all\/themes\/jnj_tiles\/scripts\/facebook.js": 1,
+              "misc\/jquery.js": 1,
+              "misc\/jquery.once.js": 1,
+              "misc\/drupal.js": 1,
+              "misc\/ui\/jquery.ui.core.min.js": 1,
+              "misc\/ui\/jquery.ui.widget.min.js": 1,
+              "misc\/jquery.cookie.js": 1,
+              "misc\/ui\/jquery.ui.button.min.js": 1,
+              "misc\/ui\/jquery.ui.mouse.min.js": 1,
+              "misc\/ui\/jquery.ui.draggable.min.js": 1,
+              "misc\/ui\/jquery.ui.position.min.js": 1,
+              "misc\/ui\/jquery.ui.resizable.min.js": 1,
+              "misc\/ui\/jquery.ui.dialog.min.js": 1,
+              "sites\/all\/modules\/admin_menu\/admin_devel\/admin_devel.js": 1,
+              "public:\/\/languages\/pt-br_IiuRiWz929THelAnXg5jLACDZX-jV4nsve5Wr17HRsg.js": 1,
+              "sites\/all\/modules\/authcache\/authcache.js": 1,
+              "sites\/all\/modules\/jnj_plusoft\/jnj_plusoft_forms\/js\/blockUI.js": 1,
+              "sites\/all\/modules\/jnj_plusoft\/jnj_plusoft_forms\/js\/jnj_plusoft.general.js": 1,
+              "sites\/all\/modules\/jnj_tiles\/js\/jnj_tiles_youtube.js": 1,
+              "sites\/all\/modules\/jnj_bdriven\/js\/jnj_bdriven_log.js": 1,
+              "sites\/all\/modules\/jnj_tiles\/jnj_tiles_search_solr\/js\/jnj_tiles_search_solr.js": 1,
+              "sites\/all\/modules\/extlink\/extlink.js": 1,
+              "\/\/assets.adobedtm.com\/bf12630c02a44df137a783f39cdb4dbd09e2b5d7\/satelliteLib-a77040281e8ad94d1a2e4c30d4df757c9e6fed98.js": 1,
+              "sites\/all\/modules\/google_analytics\/googleanalytics.js": 1,
+              "sites\/all\/themes\/jnj_tiles\/scripts\/modernizr.min.js": 1,
+              "sites\/all\/themes\/jnj_tiles\/scripts\/jquery.hammer.min.js": 1,
+              "sites\/all\/themes\/jnj_tiles\/scripts\/hammer.min.js": 1,
+              "sites\/all\/themes\/jnj_tiles\/scripts\/jquery.isotope.min.js": 1,
+              "sites\/all\/themes\/jnj_tiles\/scripts\/jquery.cookie.js": 1,
+              "sites\/all\/themes\/jnj_tiles\/scripts\/jquery.flexslider-min.js": 1,
+              "sites\/all\/themes\/jnj_tiles\/scripts\/jquery.hoverIntent.min.js": 1,
+              "sites\/all\/themes\/jnj_tiles\/scripts\/jquery.lazyload.js": 1,
+              "sites\/all\/themes\/jnj_tiles\/scripts\/jquery.dotdotdot.min.js": 1,
+              "sites\/all\/themes\/jnj_tiles\/scripts\/jquery.simplePagination.js": 1,
+              "sites\/all\/themes\/jnj_tiles\/scripts\/filters.js": 1,
+              "sites\/all\/themes\/jnj_tiles\/scripts\/main.js": 1,
+              "sites\/all\/themes\/jnj_tiles\/scripts\/menu.js": 1,
+              "sites\/all\/themes\/jnj_tiles\/scripts\/box_images.js": 1,
+              "sites\/all\/themes\/jnj_tiles\/scripts\/box.isotope.js": 1,
+              "sites\/all\/themes\/jnj_tiles\/scripts\/box.features.js": 1,
+              "sites\/all\/themes\/jnj_tiles\/scripts\/jquery.elevatezoom.js": 1,
+              "sites\/all\/themes\/jnjbrasil\/scripts\/jquery.mousewheel.js": 1,
+              "sites\/all\/themes\/jnjbrasil\/scripts\/jquery.jscrollpane.js": 1,
+              "sites\/all\/themes\/jnjbrasil\/scripts\/theme-general.js": 1,
+              "sites\/all\/themes\/adaptivetheme\/at_core\/scripts\/scalefix.js": 1,
+              "sites\/all\/themes\/adaptivetheme\/at_core\/scripts\/onmediaquery.js": 1,
+              "sites\/all\/themes\/jnjbrasil\/scripts\/media_queries.js": 1
+          }
+      },
+      "jnjBdriven": {
+          "url": {
+              "bdrivenLog": "jnj-bdriven\/log\/js",
+              "debugMode": "jnj-bdriven\/debug-mode\/js"
+          }
+      },
+      "plusoft": {
+          "prevent_breaking_flow": 1,
+          "register_url": "\/cadastro"
+      },
+      "jnjTiles": {
+          "additionalContentEnabled": 1,
+          "url": {
+              "dynamicBoxes": "dynamic-content-boxes",
+              "setUserReminderNotification": "\/change-alert-status",
+              "lazyLoadPlaceholder": "https:\/\/www.jnjbrasil.com.br\/sites\/all\/modules\/jnj_tiles\/images\/placeholder.png",
+              "saveRating": "https:\/\/www.jnjbrasil.com.br\/save-rating",
+              "getRating": "https:\/\/www.jnjbrasil.com.br\/get-rating-content"
+          },
+          "device": "desktop",
+          "facebook": {
+              "app_id": "717042828322060",
+              "language": "pt_BR"
+          }
+      },
+      "extlink": {
+          "extTarget": "_blank",
+          "extClass": 0,
+          "extContainerClass": "extlink-window-message",
+          "extSubdomains": 1,
+          "extExclude": "(facebook\\.com|twitter\\.com|google\\.com|youtube\\.com|pinterest\\.com|sundown\\.com\\.br|johnsonsbaby\\.com\\.br|neutrogena\\.com\\.br|roc\\.com\\.br|listerine\\.com\\.br|acuvue\\.com\\.br|tylenol\\.com\\.br|semprelivre\\.com\\.br|148\\.177\\.28\\.35|jobs\\.jnj\\.com|jjlacontactus\\.com)",
+          "extInclude": "",
+          "extAlert": "1",
+          "extAlertText": "",
+          "extOkLabel": "Continuar",
+          "extCancelLabel": "Voltar",
+          "extCloseButton": "X",
+          "mailtoClass": 0,
+          "extHtmlText": "    \u003Cdiv id=\u0022extlink-window-container\u0022 class=\u0022extlink-window-message\u0022\u003E\n      \u003Ch3\u003EAviso\u003C\/h3\u003E\r\n\u003Cp\u003EEste link ir\u00e1 lev\u00e1-lo a um site no qual a \u003Ca href=\u0022\/politica-de-privacidade-0\u0022\u003EPol\u00edtica de Privacidade\u003C\/a\u003E da Johnson \u0026 Johnson do Brasil n\u00e3o se aplica.\u003C\/p\u003E\r\n\u003Cp\u003ERecomendamos que voc\u00ea leia a Pol\u00edtica de Privacidade de todo site que voc\u00ea visitar.\u003C\/p\u003E\n    \u003C\/div\u003E"
+      },
+      "googleanalytics": {
+          "trackOutbound": 1,
+          "trackMailto": 1,
+          "trackDownload": 1,
+          "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|docx?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|pptx?|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xlsx?|xml|z|zip|rar"
+      },
+      "urlIsAjaxTrusted": {
+          "\/resultado-de-busca": true,
+          "\/desafio": true
+      }
+  });</script>
+  <!--[if lte IE 9]>
+  <script src="https://www.jnjbrasil.com.br/sites/all/themes/jnjbrasil/scripts/ie-only.js?okebtx"></script>
+  <![endif]-->
+  <!--[if lt IE 9]>
+  <script src="https://www.jnjbrasil.com.br/sites/all/themes/adaptivetheme/at_core/scripts/respond.js?okebtx"></script>
+  <script src="https://www.jnjbrasil.com.br/sites/all/themes/adaptivetheme/at_core/scripts/html5.js?okebtx"></script>
+  <![endif]-->
+  </head>
+  <body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-3716 node-type-page footer-gray lang-pt-br site-name-jnj-brasil section-desafio">
+
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MLRRS3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script type="text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0];var j=d.createElement(s);var dl=l!='dataLayer'?'&l='+l:'';j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;j.type='text/javascript';j.async=true;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MLRRS3');</script>
+
+  <div id="skip-link">
+  <a title="" tabindex="1" href="#main-content" class="element-invisible element-focusable">Pular para o conteúdo principal</a>
+  </div>
+  <div id="block-easy-breadcrumb-easy-breadcrumb" class="block block-easy-breadcrumb no-title odd first block-count-1 block-region-breadcrumb block-easy-breadcrumb"><div class="block-inner clearfix">
+  <div class="block-content content"><div class="easy-breadcrumb"><a href="/" class="easy-breadcrumb_segment easy-breadcrumb_segment-front">Início</a><span class="easy-breadcrumb_segment-separator"> &gt;&gt; </span><a href="/desafio" class="easy-breadcrumb_segment easy-breadcrumb_segment-title">Desafio</a></div></div>
+  </div></div><script type="application/ld+json">
+    [{"@context":"http:\/\/schema.org","@type":"Organization","url":"https:\/\/www.jnjbrasil.com.br","logo":"https:\/\/www.jnjbrasil.com.br\/sites\/all\/themes\/jnjbrasil\/logo.png"},{"@context":"http:\/\/schema.org","@type":"WebSite","name":"JnJ Brasil","alternateName":"JnJ Brasil","url":"https:\/\/www.jnjbrasil.com.br"},{"@context":"http:\/\/schema.org","@type":"WebSite","url":"https:\/\/www.jnjbrasil.com.br","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.jnjbrasil.com.br\/resultado-de-busca?query={search_term_string}","query-input":"required name=search_term_string"}},{"@context":"http:\/\/schema.org","@type":"Person","name":"JnJ Brasil","url":"https:\/\/www.jnjbrasil.com.br","sameAs":["https:\/\/www.facebook.com\/jnjbrasil\/?fref=ts","https:\/\/www.youtube.com\/user\/jnjbrasil"]},{"@context":"http:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/www.jnjbrasil.com.br\/home","name":"In\u00edcio"}},{"@type":"ListItem","position":2,"item":{"@id":"https:\/\/www.jnjbrasil.com.br\/desafio","name":"Desafio"}}]}]</script>
+  <div id="fb-root"></div>
+  <div id="page" class="container page">
+
+  <header id="header" class="clearfix" role="banner">
+  <div class="bg-header"></div>
+  <div class="bg-header-menu"></div>
+  <div class="content-header">
+
+  <div id="branding" class="branding-elements clearfix">
+  <a tabindex="2" href="https://www.jnjbrasil.com.br" title="Página inicial" rel="home" id="logo">
+  <img src="https://www.jnjbrasil.com.br/sites/all/themes/jnjbrasil/logo.png" alt="Página inicial"/>
+  </a>
+  </div>
+
+  <!--googleoff: index-->
+  <div class="region region-header"><div class="region-inner clearfix"><div id="block-menu-menu-login-menu" class="block block-menu no-title odd first block-count-2 block-region-header block-menu-login-menu" role="navigation"><div class="block-inner clearfix">
+  <div class="block-content content"><ul class="menu clearfix"><li class="first last leaf menu-depth-1 menu-item-604"><a href="/" tabindex="10" title="Busca" class="desktop busca">Busca</a></li></ul></div>
+  </div></div><div id="block-jnj-tiles-search-solr-search-form-apache" class="block block-jnj-tiles-search-solr no-title even block-count-3 block-region-header block-search-form-apache"><div class="block-inner clearfix">
+  <div class="block-content content"><form class="search-form" action="/resultado-de-busca" method="post" id="search-form" accept-charset="UTF-8"><div><div class="container-inline form-wrapper" id="edit-basic"><div class="form-item form-type-textfield form-item-keys">
+  <input class="solr-search form-text" type="text" id="edit-keys" name="keys" value="" size="40" maxlength="255"/>
+  </div>
+  <input type="submit" id="edit-submit" name="op" value="Buscar" class="form-submit"/></div><input type="hidden" name="form_build_id" value="form-y4mgrpzYNasupRGmuOoXAbbwigJqBQA2P1tC2UCfuHw"/>
+  <input type="hidden" name="form_id" value="search_form"/>
+  </div></form></div>
+  </div></div><nav id="block-system-main-menu" class="block block-system block-menu no-title odd last block-count-4 block-region-header block-main-menu" role="navigation"><div class="block-inner clearfix">
+  <div class="block-content content"><ul class="menu clearfix"><li class="first last expanded menu-depth-1 menu-item-218"><a href="/" class="mobile mobile-home">Home</a><ul class="menu clearfix"><li class="first collapsed menu-depth-2 menu-item-1304"><a href="/nossas-marcas" tabindex="3" name="menu-brand" class="open-menu">Nossas Marcas</a></li><li class="collapsed menu-depth-2 menu-item-2559"><a href="/johnson-johnson" tabindex="4" title="A Johnson &amp; Johnson" id="menu-jnj" name="menu-institucional" class="open-menu">A Johnson &amp; Johnson</a></li><li class="collapsed menu-depth-2 menu-item-825"><a href="/carreiras/home" tabindex="5" title="Carreiras" name="menu-carreira" class="open-menu">Carreiras</a></li><li class="leaf menu-depth-2 menu-item-2348"><a href="/noticias-0" tabindex="6" title="NOTICIAS" name="menu-noticias">Notícias</a></li><li class="last leaf menu-depth-2 menu-item-600"><a href="/fale-conosco-landing" tabindex="7" title="Fale Conosco" class="contact-us-link">Fale Conosco</a></li></ul></li></ul></div>
+  </div></nav></div></div> <!--googleon: index-->
+  </div>
+  </header>
+
+  <!--googleoff: index-->
+  <div id="menu-bar" class="nav clearfix"><nav id="block-block-3" class="block block-block menu-login block-title block-login-title no-title menu-wrapper menu-bar-wrapper clearfix odd first block-count-5 block-region-menu-bar block-3">
+  <h3>
+  Tenha acesso <br/>
+  ao conteúdo exclusivo</h3>
+  <p>
+  A <strong>Johnson &amp; Johnson do Brasil</strong> tem um espaço feito especialmente para você.</p>
+  </nav><nav id="block-block-2" class="block block-block menu-login block-register no-title menu-wrapper menu-bar-wrapper clearfix even block-count-6 block-region-menu-bar block-2">
+  <p>
+  <strong>Já é cadastrado?</strong> Cadastre-se para ter acesso<br/>
+  ao conteúdo exclusivo.</p>
+  <p>
+  <a class="button" href="/cadastro" title="Cadastrar">Cadastrar</a></p>
+  <div class="bt-connect">
+  <a href="/fblogin">Conectar</a></div>
+  </nav><nav id="block-jnj-plusoft-forms-plusoft-login" class="block block-jnj-plusoft-forms menu-login login-form menu-wrapper menu-bar-wrapper clearfix odd block-count-7 block-region-menu-bar block-plusoft-login">
+  <h2 class="element-invisible block-title">Login form</h2>
+  <form action="/desafio" method="post" id="jnj-plusoft-login-form" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-email">
+  <label for="edit-email"><span class="form-required">*</span>E-Mail </label>
+  <input type="text" id="edit-email" name="email" value="" size="60" maxlength="60" class="form-text"/>
+  </div>
+  <div class="form-item form-type-password form-item-password">
+  <label for="edit-password">Senha </label>
+  <input type="password" id="edit-password" name="password" size="60" maxlength="16" class="form-text"/>
+  </div>
+  <a href="/esqueci-minha-senha" title="Esqueceu sua senha?" class="forgot-password">Esqueceu sua senha?</a><input type="hidden" name="form_build_id" value="form-Lg-k5-2XuyOHKlH2pL4uCl8-xTR2TgC5IbmMrcXaZEQ"/>
+  <input type="hidden" name="form_id" value="jnj_plusoft_login_form"/>
+  <input tabindex="3" title="Enviar" type="submit" id="edit-submit--2" name="op" value="Enviar" class="form-submit"/></div></form>
+  </nav><div id="block-menu-block-3" class="menu-carreira block block-menu-block jnjbrasil-menu-career no-title menu-wrapper menu-bar-wrapper clearfix even block-count-8 block-region-menu-bar block-3" role="navigation">
+  <div class="block-content content">
+  <div class="block-title block-carreira-title">
+  <h3>
+  Venha fazer a diferença.</h3>
+  <p>
+  A&nbsp;<strong>Johnson&amp;Johnson do Brasil </strong>acredita nos talentos brasileiros.</p>
+  <p>
+  <a class="button" href="/carreiras">Saiba Mais</a></p>
+  </div>
+  <div class="block-list block-list-carreira">
+  <ul>
+  <li class="menu-with-image" data-image-url-full_hd="https://www.jnjbrasil.com.br/sites/default/files/content-images/Pagina_carreiras/img_submenu_carreiras-2.jpg" data-image-url-desktop="https://www.jnjbrasil.com.br/sites/default/files/content-images/Pagina_carreiras/img_submenu_carreiras-2.jpg"><a href="/carreiras/home" title="Oportunidades"><div class="image-placeholder"></div><span class="trasnparency75 jnj-red-web">Oportunidades</span></a></li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  <div id="block-menu-block-1" class="menu-institucional block block-menu-block jnjbrasil-menu-institucional no-title menu-wrapper menu-bar-wrapper clearfix odd block-count-9 block-region-menu-bar block-1" role="navigation">
+  <div class="block-content content">
+  <div class="block-title block-institucional-title">
+  <h3>
+  Cuidar do mundo, uma pessoa de cada vez.</h3>
+  <p>
+  A <strong>Johnson&amp;Johnson&nbsp;</strong>promoverá o bem estar de cada pessoa.</p>
+  <p>
+  <a class="button" href="/johnson-johnson">Saiba Mais</a></p>
+  </div>
+  <div class="block-list block-list-institucional">
+  <ul>
+  <li class="menu-with-image" data-image-url-full_hd="https://www.jnjbrasil.com.br/sites/default/files/content-images/Pagina_Compartilhe/img_submenu_carinho.jpg" data-image-url-desktop="https://www.jnjbrasil.com.br/sites/default/files/content-images/Pagina_Compartilhe/img_submenu_carinho.jpg"><a href="/compartilhe-carinho" title="Compartilhe Carinho"><div class="image-placeholder"></div><span class="trasnparency75 jnj-red-web">Compartilhe Carinho</span></a></li>
+  <li class="menu-with-image" data-image-url-full_hd="https://www.jnjbrasil.com.br/sites/default/files/content-images/Pagina_Johnson-Johnson/img_submenu_johnsons.jpg" data-image-url-desktop="https://www.jnjbrasil.com.br/sites/default/files/content-images/Pagina_Johnson-Johnson/img_submenu_johnsons.jpg"><a href="/johnson-johnson" title="Quem Somos"><div class="image-placeholder"></div><span class="trasnparency75 jnj-red-web">Quem Somos</span></a></li>
+  <li class="menu-with-image" data-image-url-full_hd="https://www.jnjbrasil.com.br/sites/default/files/content-images/Pagina_Sustentabilidade/img_submenu_sustentabilidade.jpg" data-image-url-desktop="https://www.jnjbrasil.com.br/sites/default/files/content-images/Pagina_Sustentabilidade/img_submenu_sustentabilidade.jpg"><a href="/sustentabilidade" title="Sustentabilidade"><div class="image-placeholder"></div><span class="trasnparency75 jnj-red-web">Sustentabilidade</span></a></li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  <div id="block-menu-block-2" class="menu-brand block block-menu-block jnjbrasil-menu-brands no-title menu-wrapper menu-bar-wrapper clearfix even block-count-10 block-region-menu-bar block-2" role="navigation">
+  <div class="block-content content">
+  <div class="block-brand-list">
+  <ul>
+  <li data-key="0"><a href="/nossas-marcas/cuidados-topicos" title="Cuidados Tópicos">Cuidados Tópicos</a></li>
+  <li data-key="1"><a href="/nossas-marcas/cuidados-com-a-pele" title="Cuidados com a Pele">Cuidados com a Pele</a></li>
+  <li data-key="2"><a href="/nossas-marcas/cuidados-com-o-bebe" title="Cuidados com o Bebê">Cuidados com o Bebê</a></li>
+  <li data-key="3"><a href="/nossas-marcas/higiene-oral" title="Higiene Oral">Higiene Oral</a></li>
+  <li data-key="4"><a href="/acuvue/lentes-de-contato" title="Lentes de Contato">Lentes de Contato</a></li>
+  <li data-key="5"><a href="/nossas-marcas/medicamentos" title="Medicamentos">Medicamentos</a></li>
+  <li data-key="6"><a href="/nossas-marcas/saude-da-mulher" title="Saúde da Mulher">Saúde da Mulher</a></li>
+  </ul>
+  </div>
+
+  <div class="block-products-list">
+  <div class="flexslider menu-brand-0 active">
+  <ul class="list slides">
+  <li class="menu-with-image has_flip no-label " data-image-url-full_hd="https://www.jnjbrasil.com.br/sites/default/files/content-images/logos_menu/new_band-aid_johnsons_e_johnsons_menu_0.jpg" data-image-url-desktop="https://www.jnjbrasil.com.br/sites/default/files/content-images/logos_menu/new_band-aid_johnsons_e_johnsons_menu_0.jpg">
+  <div class="content-front">
+  <div class="image-placeholder"></div>
+  </div>
+  <div class="content-hover">
+  <div class="background jnj-topics"></div>
+  <div class="content jnj-topics">
+  <h4>BAND-AID<sup>®</sup></h4>
+  <p>é mais que proteção. É cuidado.</p>
+  <a href="/band-aid/home" class="button" title="SAIBA MAIS">SAIBA MAIS</a>
+  <a href="/band-aid/home" class="box-anchor" title="SAIBA MAIS"></a>
+  </div>
+  </div>
+  </li>
+  <li class="menu-with-image has_flip no-label " data-image-url-full_hd="https://www.jnjbrasil.com.br/sites/default/files/content-images/logos_menu/new_cotonetes_johnsons_e_johnsons_menu.jpg" data-image-url-desktop="https://www.jnjbrasil.com.br/sites/default/files/content-images/logos_menu/new_cotonetes_johnsons_e_johnsons_menu.jpg">
+  <div class="content-front">
+  <div class="image-placeholder"></div>
+  </div>
+  <div class="content-hover">
+  <div class="background jnj-topics"></div>
+  <div class="content jnj-topics">
+  <h4>COTONETES<sup>®</sup> </h4>
+  <p>para higiene com segurança e conforto.</p>
+  <a href="/cotonetes/home" class="button" title="SAIBA MAIS">SAIBA MAIS</a>
+  <a href="/cotonetes/home" class="box-anchor" title="SAIBA MAIS"></a>
+  </div>
+  </div>
+  </li>
+  </ul>
+  </div>
+  <div class="flexslider menu-brand-1 inactive">
+  <ul class="list slides">
+  <li class="menu-with-image has_flip no-label " data-image-url-full_hd="https://www.jnjbrasil.com.br/sites/default/files/content-images/aveeno_logo.png" data-image-url-desktop="https://www.jnjbrasil.com.br/sites/default/files/content-images/aveeno_logo_0.png">
+  <div class="content-front">
+  <div class="image-placeholder"></div>
+  </div>
+  <div class="content-hover">
+  <div class="background jnj-skin"></div>
+  <div class="content jnj-skin">
+  <h4>AVEENO<sup>®</sup> </h4>
+  <p>pele naturalmente bonita e saudável</p>
+  <a href="/aveeno/home" class="button" title="SAIBA MAIS">SAIBA MAIS</a>
+  <a href="/aveeno/home" class="box-anchor" title="SAIBA MAIS"></a>
+  </div>
+  </div>
+  </li>
+  <li class="menu-with-image has_flip no-label " data-image-url-full_hd="https://www.jnjbrasil.com.br/sites/default/files/content-images/logos_menu/new_clean_e_clear_johnsons_e_johnsons_menu.jpg" data-image-url-desktop="https://www.jnjbrasil.com.br/sites/default/files/content-images/logos_menu/new_clean_e_clear_johnsons_e_johnsons_menu.jpg">
+  <div class="content-front">
+  <div class="image-placeholder"></div>
+  </div>
+  <div class="content-hover">
+  <div class="background jnj-skin"></div>
+  <div class="content jnj-skin">
+  <h4>CLEAN & CLEAR<sup>®</sup></h4>
+  <p>para limpar, tonificar e tratar a sua pele.</p>
+  <a href="/clean-clear/home" class="button" title="SAIBA MAIS">SAIBA MAIS</a>
+  <a href="/clean-clear/home" class="box-anchor" title="SAIBA MAIS"></a>
+  </div>
+  </div>
+  </li>
+  <li class="menu-with-image has_flip no-label " data-image-url-full_hd="https://www.jnjbrasil.com.br/sites/default/files/content-images/logos_menu/new_johnsons_johnsons_e_johnsons_menu.jpg" data-image-url-desktop="https://www.jnjbrasil.com.br/sites/default/files/content-images/logos_menu/new_johnsons_johnsons_e_johnsons_menu.jpg">
+  <div class="content-front">
+  <div class="image-placeholder"></div>
+  </div>
+  <div class="content-hover">
+  <div class="background jnj-skin"></div>
+  <div class="content jnj-skin">
+  <h4>JOHNSON'S<sup>®</sup> </h4>
+  <p>A vida bem de perto. </p>
+  <a href="/johnsons/home" class="button" title="SAIBA MAIS">SAIBA MAIS</a>
+  <a href="/johnsons/home" class="box-anchor" title="SAIBA MAIS"></a>
+  </div>
+  </div>
+  </li>
+  <li class="menu-with-image has_flip no-label " data-image-url-full_hd="https://www.jnjbrasil.com.br/sites/default/files/content-images/logos_menu/new_neutrogena_johnsons_e_johnsons_menu.jpg" data-image-url-desktop="https://www.jnjbrasil.com.br/sites/default/files/content-images/logos_menu/new_neutrogena_johnsons_e_johnsons_menu.jpg">
+  <div class="content-front">
+  <div class="image-placeholder"></div>
+  </div>
+  <div class="content-hover">
+  <div class="background jnj-skin"></div>
+  <div class="content jnj-skin">
+  <h4>NEUTROGENA<sup>®</sup></h4>
+  <p>para uma pele bonita e saudável.</p>
+  <a href="/neutrogena/home" class="button" title="SAIBA MAIS">SAIBA MAIS</a>
+  <a href="/neutrogena/home" class="box-anchor" title="SAIBA MAIS"></a>
+  </div>
+  </div>
+  </li>
+  <li class="menu-with-image has_flip no-label " data-image-url-full_hd="https://www.jnjbrasil.com.br/sites/default/files/content-images/novologoroc1x1_fullhd.jpg" data-image-url-desktop="https://www.jnjbrasil.com.br/sites/default/files/content-images/novologoroc1x1_desktop.jpg">
+  <div class="content-front">
+  <div class="image-placeholder"></div>
+  </div>
+  <div class="content-hover">
+  <div class="background jnj-skin"></div>
+  <div class="content jnj-skin">
+  <h4>RoC<sup>®</sup> </h4>
+  <p>alia resultados reais e clinicamente comprovados com a melhor tecnologia para a sua pele.</p>
+  <a href="/roc/home" class="button" title="SAIBA MAIS">SAIBA MAIS</a>
+  <a href="/roc/home" class="box-anchor" title="SAIBA MAIS"></a>
+  </div>
+  </div>
+  </li>
+  <li class="menu-with-image has_flip no-label " data-image-url-full_hd="https://www.jnjbrasil.com.br/sites/default/files/content-images/marca_sundown/new_sundown_johnsons_e_johnsons_menu_02.jpg" data-image-url-desktop="https://www.jnjbrasil.com.br/sites/default/files/content-images/marca_sundown/new_sundown_johnsons_e_johnsons_menu_02.jpg">
+  <div class="content-front">
+  <div class="image-placeholder"></div>
+  </div>
+  <div class="content-hover">
+  <div class="background jnj-skin"></div>
+  <div class="content jnj-skin">
+  <h4>SUNDOWN<sup>®</sup></h4>
+  <p>Porque todo dia é dia de sol.</p>
+  <a href="/sundown/home" class="button" title="SAIBA MAIS">SAIBA MAIS</a>
+  <a href="/sundown/home" class="box-anchor" title="SAIBA MAIS"></a>
+  </div>
+  </div>
+  </li>
+  </ul>
+  </div>
+  <div class="flexslider menu-brand-2 inactive">
+  <ul class="list slides">
+  <li class="menu-with-image has_flip no-label " data-image-url-full_hd="https://www.jnjbrasil.com.br/sites/default/files/content-images/aveeno_logo.png" data-image-url-desktop="https://www.jnjbrasil.com.br/sites/default/files/content-images/aveeno_logo_0.png">
+  <div class="content-front">
+  <div class="image-placeholder"></div>
+  </div>
+  <div class="content-hover">
+  <div class="background jnj-skin"></div>
+  <div class="content jnj-skin">
+  <h4>AVEENO<sup>®</sup> </h4>
+  <p>pele naturalmente bonita e saudável</p>
+  <a href="/aveeno/home" class="button" title="SAIBA MAIS">SAIBA MAIS</a>
+  <a href="/aveeno/home" class="box-anchor" title="SAIBA MAIS"></a>
+  </div>
+  </div>
+  </li>
+  <li class="menu-with-image   " data-image-url-full_hd="https://www.jnjbrasil.com.br/sites/default/files/content-images/hipoglos.png" data-image-url-desktop="https://www.jnjbrasil.com.br/sites/default/files/content-images/hipoglos.png">
+  <a href="/hipoglos/home" title="Hipoglós" class="link-big">
+  <div class="content-front">
+  <div class="image-placeholder"></div>
+  </div>
+  </a>
+  </li>
+  <li class="menu-with-image has_flip no-label " data-image-url-full_hd="https://www.jnjbrasil.com.br/sites/default/files/content-images/logos_menu/new_baby_johnsons_e_johnsons_menu.jpg" data-image-url-desktop="https://www.jnjbrasil.com.br/sites/default/files/content-images/logos_menu/new_baby_johnsons_e_johnsons_menu.jpg">
+  <div class="content-front">
+  <div class="image-placeholder"></div>
+  </div>
+  <div class="content-hover">
+  <div class="background jnj-baby"></div>
+  <div class="content jnj-baby">
+  <h4>JOHNSON'S<sup>®</sup> baby</h4>
+  <p>está com você em cada descoberta do seu bebê.</p>
+  <a href="/johnsons-baby/home" class="button" title="SAIBA MAIS">SAIBA MAIS</a>
+  <a href="/johnsons-baby/home" class="box-anchor" title="SAIBA MAIS"></a>
+  </div>
+  </div>
+  </li>
+  <li class="menu-with-image has_flip no-label " data-image-url-full_hd="https://www.jnjbrasil.com.br/sites/default/files/content-images/Pagina_Desitin/new_desitin_johnsons_e_johnsons_menu.jpg" data-image-url-desktop="https://www.jnjbrasil.com.br/sites/default/files/content-images/Pagina_Desitin/new_desitin_johnsons_e_johnsons_menu.jpg">
+  <div class="content-front">
+  <div class="image-placeholder"></div>
+  </div>
+  <div class="content-hover">
+  <div class="background jnj-baby"></div>
+  <div class="content jnj-baby">
+  <h4>Desitin<sup>®</sup></h4>
+  <p>Ultraproteção contra assaduras, mais hidratação para uma pele macia e lisinha do seu bebê.</p>
+  <a href="/desitin" class="button" title="SAIBA MAIS">SAIBA MAIS</a>
+  <a href="/desitin" class="box-anchor" title="SAIBA MAIS"></a>
+  </div>
+  </div>
+  </li>
+  </ul>
+  </div>
+  <div class="flexslider menu-brand-3 inactive">
+  <ul class="list slides">
+  <li class="menu-with-image has_flip no-label " data-image-url-full_hd="https://www.jnjbrasil.com.br/sites/default/files/content-images/logos_menu/new_listerine_johnsons_e_johnsons_menu.jpg" data-image-url-desktop="https://www.jnjbrasil.com.br/sites/default/files/content-images/logos_menu/new_listerine_johnsons_e_johnsons_menu.jpg">
+  <div class="content-front">
+  <div class="image-placeholder"></div>
+  </div>
+  <div class="content-hover">
+  <div class="background jnj-oral"></div>
+  <div class="content jnj-oral">
+  <h4>LISTERINE<sup>®</sup></h4>
+  <p>Boca limpa de verdade.</p>
+  <a href="/listerine/home" class="button" title="SAIBA MAIS">SAIBA MAIS</a>
+  <a href="/listerine/home" class="box-anchor" title="SAIBA MAIS"></a>
+  </div>
+  </div>
+  </li>
+  <li class="menu-with-image has_flip no-label " data-image-url-full_hd="https://www.jnjbrasil.com.br/sites/default/files/content-images/logos_menu/new_reach_johnsons_e_johnsons_menu.jpg" data-image-url-desktop="https://www.jnjbrasil.com.br/sites/default/files/content-images/logos_menu/new_reach_johnsons_e_johnsons_menu.jpg">
+  <div class="content-front">
+  <div class="image-placeholder"></div>
+  </div>
+  <div class="content-hover">
+  <div class="background jnj-oral"></div>
+  <div class="content jnj-oral">
+  <h4>REACH<sup>®</sup></h4>
+  <p>Seu sorriso, sua saúde.</p>
+  <a href="/reach/home" class="button" title="SAIBA MAIS">SAIBA MAIS</a>
+  <a href="/reach/home" class="box-anchor" title="SAIBA MAIS"></a>
+  </div>
+  </div>
+  </li>
+  </ul>
+  </div>
+  <div class="flexslider menu-brand-4 inactive">
+  <ul class="list slides">
+  <li class="menu-with-image has_flip no-label " data-image-url-full_hd="https://www.jnjbrasil.com.br/sites/default/files/content-images/logos_menu/new_acuvue_johnsons_e_johnsons_menu.jpg" data-image-url-desktop="https://www.jnjbrasil.com.br/sites/default/files/content-images/logos_menu/new_acuvue_johnsons_e_johnsons_menu.jpg">
+  <div class="content-front">
+  <div class="image-placeholder"></div>
+  </div>
+  <div class="content-hover">
+  <div class="background jnj-lenses"></div>
+  <div class="content jnj-lenses">
+  <h4>ACUVUE<sup>®</sup></h4>
+  <p>Curta as chances de ser você usando as lentes de contato.</p>
+  <a href="/acuvue/home" class="button" title="SAIBA MAIS">SAIBA MAIS</a>
+  <a href="/acuvue/home" class="box-anchor" title="SAIBA MAIS"></a>
+  </div>
+  </div>
+  </li>
+  </ul>
+  </div>
+  <div class="flexslider menu-brand-5 inactive">
+  <ul class="list slides">
+  <li class="menu-with-image has_flip no-label " data-image-url-full_hd="https://www.jnjbrasil.com.br/sites/default/files/content-images/marcas_Mylanta/new_mylanta_johnsons_e_johnsons_menu_0.jpg" data-image-url-desktop="https://www.jnjbrasil.com.br/sites/default/files/content-images/marcas_Mylanta/new_mylanta_johnsons_e_johnsons_menu_0.jpg">
+  <div class="content-front">
+  <div class="image-placeholder"></div>
+  </div>
+  <div class="content-hover">
+  <div class="background jnj-drunk"></div>
+  <div class="content jnj-drunk">
+  <h4>MYLANTA<sup>®</sup> PLUS</h4>
+  <p>Alívio rápido da azia.</p>
+  <a href="/mylanta-plus/home" class="button" title="SAIBA MAIS">SAIBA MAIS</a>
+  <a href="/mylanta-plus/home" class="box-anchor" title="SAIBA MAIS"></a>
+  </div>
+  </div>
+  </li>
+  <li class="menu-with-image   ">
+  <a href="/home/nicorette" title="Nicorette" class="link-big">
+  <div class="content-front">
+  <div class="image-placeholder"></div>
+  </div>
+  </a>
+  </li>
+  <li class="menu-with-image has_flip no-label " data-image-url-full_hd="https://www.jnjbrasil.com.br/sites/default/files/content-images/marcas_Resprin/new_resprin_johnsons_e_johnsons_menu_0.jpg" data-image-url-desktop="https://www.jnjbrasil.com.br/sites/default/files/content-images/marcas_Resprin/new_resprin_johnsons_e_johnsons_menu_0.jpg">
+  <div class="content-front">
+  <div class="image-placeholder"></div>
+  </div>
+  <div class="content-hover">
+  <div class="background jnj-drunk"></div>
+  <div class="content jnj-drunk">
+  <h4>RESPRIN<sup>®</sup></h4>
+  <p>proporciona alivio rápido e completo dos sintomas associados a gripes e resfriados.</p>
+  <a href="/resprin/home" class="button" title="SAIBA MAIS">SAIBA MAIS</a>
+  <a href="/resprin/home" class="box-anchor" title="SAIBA MAIS"></a>
+  </div>
+  </div>
+  </li>
+  <li class="menu-with-image has_flip no-label " data-image-url-full_hd="https://www.jnjbrasil.com.br/sites/default/files/content-images/marca_tylenol/new_tylenol_johnsons_e_johnsons_menu.jpg" data-image-url-desktop="https://www.jnjbrasil.com.br/sites/default/files/content-images/marca_tylenol/new_tylenol_johnsons_e_johnsons_menu.jpg">
+  <div class="content-front">
+  <div class="image-placeholder"></div>
+  </div>
+  <div class="content-hover">
+  <div class="background jnj-drunk"></div>
+  <div class="content jnj-drunk">
+  <h4>TYLENOL<sup>®</sup></h4>
+  <p>É rápida. É eficaz.</p>
+  <a href="/tylenol/home" class="button" title="SAIBA MAIS">SAIBA MAIS</a>
+  <a href="/tylenol/home" class="box-anchor" title="SAIBA MAIS"></a>
+  </div>
+  </div>
+  </li>
+  </ul>
+  </div>
+  <div class="flexslider menu-brand-6 inactive">
+  <ul class="list slides">
+  <li class="menu-with-image has_flip no-label " data-image-url-full_hd="https://www.jnjbrasil.com.br/sites/default/files/content-images/logos_menu/new_carefree_johnsons_e_johnsons_menu.jpg" data-image-url-desktop="https://www.jnjbrasil.com.br/sites/default/files/content-images/logos_menu/new_carefree_johnsons_e_johnsons_menu.jpg">
+  <div class="content-front">
+  <div class="image-placeholder"></div>
+  </div>
+  <div class="content-hover">
+  <div class="background jnj-woman"></div>
+  <div class="content jnj-woman">
+  <h4>CAREFREE<sup>®</sup></h4>
+  <p>é proteção íntima diária para aproveitar todos os momentos do seu dia.</p>
+  <a href="/carefree/home" class="button" title="SAIBA MAIS">SAIBA MAIS</a>
+  <a href="/carefree/home" class="box-anchor" title="SAIBA MAIS"></a>
+  </div>
+  </div>
+  </li>
+  <li class="menu-with-image has_flip no-label " data-image-url-full_hd="https://www.jnjbrasil.com.br/sites/default/files/content-images/logos_menu/new_ob_johnsons_e_johnsons_menu_2.jpg" data-image-url-desktop="https://www.jnjbrasil.com.br/sites/default/files/content-images/logos_menu/new_ob_johnsons_e_johnsons_menu_2.jpg">
+  <div class="content-front">
+  <div class="image-placeholder"></div>
+  </div>
+  <div class="content-hover">
+  <div class="background jnj-woman"></div>
+  <div class="content jnj-woman">
+  <h4>O.B<sup>®</sup> </h4>
+  <p>Sinta a mesma liberdade dos outros dias!</p>
+  <a href="/ob/home" class="button" title="SAIBA MAIS">SAIBA MAIS</a>
+  <a href="/ob/home" class="box-anchor" title="SAIBA MAIS"></a>
+  </div>
+  </div>
+  </li>
+  <li class="menu-with-image has_flip no-label " data-image-url-full_hd="https://www.jnjbrasil.com.br/sites/default/files/content-images/logos_menu/new_semprelivre_johnsons_e_johnsons_menu.jpg" data-image-url-desktop="https://www.jnjbrasil.com.br/sites/default/files/content-images/logos_menu/new_semprelivre_johnsons_e_johnsons_menu.jpg">
+  <div class="content-front">
+  <div class="image-placeholder"></div>
+  </div>
+  <div class="content-hover">
+  <div class="background jnj-woman"></div>
+  <div class="content jnj-woman">
+  <h4>SEMPRE LIVRE<sup>®</sup></h4>
+  <p>Proteção e conforto quando você mais precisa.</p>
+  <a href="/semprelivre/home" class="button" title="SAIBA MAIS">SAIBA MAIS</a>
+  <a href="/semprelivre/home" class="box-anchor" title="SAIBA MAIS"></a>
+  </div>
+  </div>
+  </li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  </div>
+  <nav id="block-block-10" class="block block-block jnjbrasil-menu-connect no-title menu-wrapper menu-bar-wrapper clearfix odd last block-count-11 block-region-menu-bar block-10">
+  <div class="text">
+  Para uma melhor experiência, você pode registrar-se / fazer login neste site através da sua <strong>conta no Facebook</strong>. Neste caso,<br/>
+  suas informações de idade, sexo e estado civil serão compartilhadas conosco e usadas de acordo com nossa
+  <a class="jnj-white-text" href="/politica-de-privacidade-0">Política de Privacidade</a>.
+  </div>
+  <div class="bt-connect">
+  <a href="/fblogin">Conectar</a>
+  </div>
+  </nav></div> <!--googleon: index-->
+
+  <div id="columns" class="columns clearfix">
+  <div id="content-column" class="content-column" role="main">
+  <div class="content-inner">
+
+  <section id="main-content">
+  <div class="tabs"></div>
+  <div id="content" class="region">
+  <div id="block-system-main" class="block block-system no-title odd first last block-count-12 block-region-content block-main">
+  <div id="node-container" class="box-with-background " about="/desafio" typeof="foaf:Document" role="article">
+
+  <div id="node-3716" class="header-container node node-page with-title article odd node-full">
+  <header id="node-header">
+
+  <div id="page-title-container">
+  <h1 id="page-title" tabindex="20">Desafio</h1>
+
+
+  <div id="breadcrumb-container">
+  </div>
+  </div>
+
+  <div id="contact-wrapper">
+
+
+
+  </div>
+
+  </header>
+  </div>
+  <div id="featured-contents" class="hidden">
+</div>
+<div id="isotope-container" class="">
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+<article id="<%= appName %>">
+
+  <div class="modal">
+    <div class="modal__bl">
+      <div id="player" frameborder="0" allowfullscreen="1" src="#" title="YouTube Video Player"></div>
+      <button class="modal__close">x</button>
+    </div>
+  </div>
+
+  <header class="wrap header">
+
+    <h1 class="header__ttl"></h1>
+    <p class="header__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </header>
+
+  <section class="wrap">
+  </section>
+
+
+  <footer class="wrap footer">
+
+    <div class="footer__bl">
+
+    </div>
+
+  </footer>
+
+</article>
+
+<script src="assets/js/main.js"></script>
+
+<script>
+
+  var btn   = $('.modal__btn'),
+      modal = $('.modal'),
+      close = $('.modal__close'),
+      tag   = document.createElement('script'),
+      player;
+
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      videoId: 'id',
+      events: {
+        'onReady': onPlayerReady
+      }
+    });
+  }
+  function onPlayerReady(event){
+    btn.click(function() {
+      event.target.playVideo();
+      modal.show();
+    });
+    close.click(function() {
+      modal.hide();
+      event.target.stopVideo();
+    });
+  }
+  $(document).ready(function() {
+     onYouTubeIframeAPIReady();
+  });
+
+</script>
+
+
+
+</div>
+  </div>
+  </div> </div>
+  </section>
+  </div>
+  </div>
+  </div>
+
+  <footer id="footer" class="clearfix" role="contentinfo">
+  <div class="region region-footer"><div class="region-inner clearfix"><section id="block-menu-menu-social-network-menu" class="block block-menu odd first block-count-13 block-region-footer block-menu-social-network-menu" role="navigation"><div class="block-inner clearfix">
+  <h2 class="block-title">Nossa Comunidade</h2>
+  <div class="block-content content"><ul class="menu clearfix"><li class="first leaf menu-depth-1 menu-item-517"><a href="http://twitter.com/share?text=@TEXT&amp;url=@URL" tabindex="1004" title="Twitter" class="twitter-footer-link">Twitter</a></li><li class="leaf menu-depth-1 menu-item-518"><a href="http://www.facebook.com/share.php?u=@URL&amp;t=@TEXT" tabindex="1005" title="Facebook" class="facebook-footer-link">Facebook</a></li><li class="leaf menu-depth-1 menu-item-519"><a href="https://plus.google.com/share?url=@URL" tabindex="1006" title="Google Plus" class="gplus-footer-link">Google Plus</a></li><li class="leaf menu-depth-1 menu-item-520"><a href="http://www.youtube.com/jnjbrasil" tabindex="1007" title="Youtube" class="youtube-footer-link" target="_blank">Youtube</a></li><li class="last leaf menu-depth-1 menu-item-521"><a href="http://pinterest.com/pin/create/button/?url=@URL&amp;media=@IMAGE&amp;description=@TEXT" tabindex="1008" title="Pinterest" class="pinterest-footer-link">Pinterest</a></li></ul></div>
+  </div></section><div id="block-menu-menu-footer-menu" class="block block-menu no-title even block-count-14 block-region-footer block-menu-footer-menu" role="navigation"><div class="block-inner clearfix">
+  <div class="block-content content"><ul class="menu clearfix"><li class="first leaf menu-depth-1 menu-item-512"><a href="/politica-de-privacidade" tabindex="1000" title="Política de privacidade">Política de privacidade</a></li><li class="leaf menu-depth-1 menu-item-513"><a href="/atendimento/informacoes-legais" tabindex="1001" title="Informações legais">Informações legais</a></li><li class="leaf menu-depth-1 menu-item-514"><a href="/sitemap" tabindex="1002" title="Mapa do site" class="sitemap-hidden">Mapa do site</a></li><li class="last leaf menu-depth-1 menu-item-515"><a href="/atendimento/fale-conosco" tabindex="1003" title="Fale conosco" class="contact-us-link">Fale conosco</a></li></ul></div>
+  </div></div><div id="block-block-1" class="block block-block no-title odd block-count-15 block-region-footer block-1"><div class="block-inner clearfix">
+  <div class="block-content content"><p>
+  <sup>©</sup>Johnson &amp; Johnson do Brasil Indústria e Comércio de Produtos para Saúde Ltda. 2017. Todos os direitos reservados. <br/>
+  Este site é de propriedade da Johnson &amp; Johnson do Brasil Indústria e Comércio de Produtos para Saúde Ltda., única responsável por seu conteúdo, e destina-se a residentes no Brasil.<br/>
+  Data de última atualização: 18/01/2017.</p>
+  <div>
+  <img alt="W3C WAI-A" src="/sites/default/files/wcag2a.png" title="W3C WAI-A"/></div>
+  </div>
+  </div></div><div id="block-block-121" class="block block-block no-title even last block-count-16 block-region-footer block-121"><div class="block-inner clearfix">
+  <div class="block-content content"><script type="text/javascript">
+  /* <![CDATA[ */
+  var google_conversion_id = 961547482;
+  var google_custom_params = window.google_tag_params;
+  var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+  </script>
+  <noscript>
+  <div style="display:inline;">
+  <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/961547482/?value=0&amp;guid=ON&amp;script=0"/>
+  </div>
+  </noscript></div>
+  </div></div></div></div> </footer>
+  </div>
+  <script>_satellite.pageBottom();</script>
+  <script src="https://www.jnjbrasil.com.br/sites/default/files/advagg_js/js__AbRzyYq6hoshjRZxhcONNgDCabpds-EJcnFTiYZaUNw__q5CqdGVScCFXEoa0JVdDdUHi8MCIrmVQyOne3TjfjJo__MdkGEAbe7HcZ4YJ9yJUPZHs8U3luWZfMGDps-VZo1S0.js"></script>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"1f23f2a89e","applicationID":"2765209","transactionName":"Z1RUZUJZXkMEABBcDl4ed1JEUV9eSg0LUQRvQVdWVWdGWQAU","queueTime":0,"applicationTime":572,"atts":"SxNXEwpDTU0=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+  </html>

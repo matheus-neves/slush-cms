@@ -1,0 +1,23 @@
+@import 'jeet'
+@import 'kouto-swiss'
+@import '_vars'
+@import '_mixins'
+//@import 'fonts'
+@import 'cms'
+@import 'component/slick'
+
+#<%= appName %>
+
+	meyer-reset()
+	box-sizing-reset()
+
+	center(320px)
+	+above(641px)
+		center(1000px)
+	+above(1920px)
+		center(1920px)
+
+	@import 'setup'
+	@import 'component/btn'
+	@import 'component/modal'
+	@import 'section/header'

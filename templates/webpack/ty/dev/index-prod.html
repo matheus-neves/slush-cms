@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="assets/css/style.css">
+
+<article id="<%= appName %>">
+
+  <div class="modal">
+    <div class="modal__bl">
+      <div id="player" frameborder="0" allowfullscreen="1" src="#" title="YouTube Video Player"></div>
+      <button class="modal__close">x</button>
+    </div>
+  </div>
+
+  <header class="wrap header">
+
+    <h1 class="header__ttl"></h1>
+    <p class="header__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </header>
+
+  <section class="wrap">
+  </section>
+
+  <footer class="wrap footer">
+  </footer>
+
+</article>
+
+<script src="assets/js/main.js"></script>
+
+<script>
+
+  var btn   = $('.modal__btn'),
+      modal = $('.modal'),
+      close = $('.modal__close'),
+      tag   = document.createElement('script'),
+      player;
+
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      videoId: 'id',
+      events: {
+        'onReady': onPlayerReady
+      }
+    });
+  }
+  function onPlayerReady(event){
+    btn.click(function() {
+      event.target.playVideo();
+      modal.show();
+    });
+    close.click(function() {
+      modal.hide();
+      event.target.stopVideo();
+    });
+  }
+  $(document).ready(function() {
+     onYouTubeIframeAPIReady();
+  });
+
+</script>

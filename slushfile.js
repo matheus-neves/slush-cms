@@ -42,11 +42,10 @@ var defaults = (function () {
     }
 
     return {
-        appName: workingDirName,
-        userName: osUserName || format(user.name || ''),
-        authorName: user.name || '',
-        authorEmail: user.email || ''
+      appName: workingDirName
     };
+
+
 })();
 
 gulp.task('default', function (done) {
@@ -78,6 +77,15 @@ gulp.task('default', function (done) {
         message: 'What is the project repository?',
         default: defaults.appRepository
     }, {
+        type: 'list',
+        name: 'tecnology',
+        message: 'Gulp or Webpack?',
+        choices: [
+          { name: 'gulp', value: 'gulp/'},
+          { name: 'webpack', value: 'webpack/'}
+        ],
+        default: 1
+    }, {
     	  type: 'list',
     	  name: 'template',
     	  message: 'Choose your Favorite Template',
@@ -94,6 +102,7 @@ gulp.task('default', function (done) {
         name: 'moveon',
         message: 'Continue?'
     }];
+
     //Ask
     inquirer.prompt(prompts,
         function (answers) {
@@ -101,7 +110,8 @@ gulp.task('default', function (done) {
                 return done();
             }
             answers.appNameSlug = _.slugify(answers.appName);
-            gulp.src(__dirname + '/templates/' + answers.template + '/**')
+                console.log(__dirname + '/templates/' + answers.tecnology + answers.template);
+            gulp.src(__dirname + '/templates/' + answers.tecnology + answers.template + '/**')
                 .pipe(template(answers))
                 .pipe(rename(function(file) {
                   if (file.basename[0] === '_') {
