@@ -2,7 +2,7 @@
   "name": "<%= appName %>",
   "version": "<%= appVersion %>",
   "description": "<%= appDescription %>",
-  "main": "gulpfile.babel.js",
+  "main": "webpack.config.js",
   "homepage": "<%= appRepository %>",
   "scripts": {
     "clean": "rimraf build",
