@@ -1,5 +1,5 @@
 const
-  PROD       = (process.env.NODE_ENV == 'prod' ? true : false); 
+  PROD       = (process.env.NODE_ENV == 'prod' ? true : false);
   nib        = require('nib'),
   jeet       = require('jeet'),
   rupture    = require('rupture'),
@@ -90,10 +90,13 @@ const config = {
 
     rules: [
 
-    
+
       {
         test: /\.(html)$/,
-        loader: 'html-loader'
+        loader: 'html-loader',
+        options: {
+          attrs: ['img:src', 'source:srcset']
+        }
       },
 
 
@@ -119,7 +122,7 @@ const config = {
         test: /\.styl$/,
         loader: extract.extract({
           use: [
-            { 
+            {
               loader: 'css-loader',
               options: { minimize: (PROD ? true : false) }
             },
@@ -147,10 +150,10 @@ const config = {
               name: '[path][name].[ext]'
             }
           }
-        ] 
+        ]
       }
 
-      : 
+      :
 
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpe?g)$/i,
@@ -168,7 +171,7 @@ const config = {
             loader: 'image-webpack-loader',
             query: {
               mozjpeg: {
-                quality: 80
+                quality: 90
               }
             }
           }

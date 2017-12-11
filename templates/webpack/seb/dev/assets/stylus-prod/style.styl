@@ -3,10 +3,19 @@
 @import '_vars'
 @import '_mixins'
 @import 'fonts'
+//@import '../sprite'
 
 #<%= appName %>
 
-	@import 'reset'
-	@import 'component/btn'
-	@import 'component/slick'
-	@import 'section/header'
+  font-size 1rem
+  letter-spacing .8px
+  line-height 1.2
+
+  +above(940px)
+    center(940px)
+
+  @import 'layout/reset-cms'
+  @import 'layout/reset'
+  @import 'layout/base'
+  @import 'vendor/slick'
+  @import 'components/titles'

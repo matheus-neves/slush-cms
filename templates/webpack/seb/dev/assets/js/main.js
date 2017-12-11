@@ -1,23 +1,20 @@
 import $ from 'jquery';
 //import slick from 'slick-carousel'
+//import OrientationListener from './helpers/OrientationListener.js'
 
 export default (() => {
 
 let APP = {
 
   cache: {
-    ttl: $('.header__ttl')
+
   },
 
   bind: () => {
-    APP.funcs.helloWorld();
+
   },
 
   funcs: {
-
-    helloWorld: () => {
-      APP.cache.ttl.text('Hello World!');
-    }
 
   },
 
@@ -26,9 +23,7 @@ let APP = {
   },
 
   init: () => {
-    APP.plugins();
-    APP.funcs;
-    APP.bind();
+
   }
 };
 
