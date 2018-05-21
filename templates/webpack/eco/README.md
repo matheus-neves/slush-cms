@@ -1,4 +1,4 @@
-﻿# Base webpack
+# Base webpack
 Base para desenvolvimento utilizando webpack
 
 ## Dependências
@@ -10,4 +10,4 @@ Base para desenvolvimento utilizando webpack
 
 ## Utilizando
 	'Desenvolvimento': npm run dev
-        'Produção' : npm run build 
+        'Produção' : npm run build
