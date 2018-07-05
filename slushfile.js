@@ -16,7 +16,9 @@ var gulp = require('gulp'),
 	inquirer = require('inquirer'),
 	path = require('path'),
 	unzip = require('gulp-unzip'),
-	gulpIgnore = require('gulp-ignore');
+	gulpIgnore = require('gulp-ignore'),
+	grep = require('gulp-grep-stream'),
+	del  = require('del');
 
 function format(string) {
 	var username = string.toLowerCase();
@@ -112,10 +114,10 @@ gulp.task('default', function (done) {
 				return done();
 			}
 			answers.appNameSlug = _.slugify(answers.appName);
-			console.log(__dirname + '/templates/' + answers.tecnology + answers.template);
-			gulp.src(__dirname + '/templates/' + answers.tecnology + answers.template + '/**')
 
-				.pipe(template(answers))
+			gulp.src(__dirname + '/templates/' + answers.tecnology + answers.template + '/**')
+				
+			.pipe(template(answers))
 				.pipe(gulpIgnore.exclude('*.zip'))
 				.pipe(rename(function (file) {
 					if (file.basename[0] === '_') {
@@ -133,10 +135,13 @@ gulp.task('default', function (done) {
 				.on('end', function () {
 					done();
 				});
-
-			gulp
-				.src(__dirname + '/templates/' + answers.tecnology + answers.template  + '/*.zip')
-				.pipe(unzip())
-				.pipe(gulp.dest('./'));
+				
+				gulp
+					.src(__dirname + '/templates/' + answers.tecnology + answers.template  + '/*.zip')
+					.pipe(unzip())
+					.pipe(gulp.dest('./'))
+					.on('end', function () {
+						del.sync('./__MACOSX');
+					});
 		});
 });

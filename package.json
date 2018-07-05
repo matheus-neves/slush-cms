@@ -32,19 +32,23 @@
     "Babel"
   ],
   "dependencies": {
-    "slush": ">=1.0.0",
-    "gulp": "^3.6.2",
-    "gulp-template": "^0.1.1",
-    "gulp-install": "^0.1.4",
+    "del": "^3.0.0",
+    "gulp-cli": "^2.0.1",
     "gulp-conflict": "^0.1.1",
+    "gulp-filter": "^5.1.0",
+    "gulp-grep-stream": "0.0.2",
+    "gulp-ignore": "^2.0.2",
+    "gulp-install": "^0.1.4",
     "gulp-rename": "^1.2.0",
-    "underscore.string": "^2.3.3",
-    "inquirer": "^0.8.0",
-    "iniparser": "^1.0.5",
+    "gulp-template": "^0.1.1",
     "gulp-unzip": "^1.0.0",
-    "gulp-ignore": "^2.0.2"
+    "iniparser": "^1.0.5",
+    "inquirer": "^0.8.0",
+    "slush": ">=1.0.0",
+    "underscore.string": "^2.3.3"
   },
   "devDependencies": {
+    "gulp": "^3.6.2",
     "gulp-require-modules": "^1.1.2"
   }
 }
